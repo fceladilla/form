@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="registerForm">
+
+        <h2>Register Form</h2>
+
+        <form id="form" novalidate>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" minlength="2" required autocomplete="off">
+            <div class="error" id="errorName"></div>
+            <br>
+
+            <label for="lastname">Lastname: </label>
+            <input type="text" id="lastname" name="lastname" minlength="2" required autocomplete="off">
+            <div class="error" id="errorLastname"></div>
+            <br>
+
+            <label for="id">ID: </label>
+            <input type="text" id="id" name="id" minlength="2" required autocomplete="off">
+            <div class="error" id="errorId"></div>
+            <br>
+
+            <label for="mail">Email:</label>
+            <input type="mail" id="mail" name="mail" required autocomplete="off">
+            <div class="error" id="errorMail"></div>
+            <br>
+
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" required>
+            <div class="error" id="errorAge"></div>
+            <br>
+
+            <label for="signature">Signature</label>
+            <select name="signature" id="signature" required>
+                <option value="">Select</option>
+                <option value=" Technology">Technology</option>
+                <option value="Music">Music</option>
+                <option value="Design">Design</option>
+            </select>
+            <div class="error" id="errorSignature"></div>
+            <br>
+
+            <label for="studies">Studies</label>
+            <select name="studies" id="studies">
+                <option value="">Select</option>
+                <option value=" High School">High School</option>
+                <option value="College">College</option>
+                <option value="Master Degree">Master Degree</option>
+                <option value="Doctoral Degree">Doctoral Degree</option>
+            </select>
+            <div class="error" id="errorStudies"></div>
+            <br>
+
+            <label class="inline">
+                <input type="checkbox" name="terms" id="terms" required> Agree terms and conditions.
+            </label>
+            <div class="error" id="errorTerms"></div>
+            <br>
+
+            <label class="inline">Advertising</label>
+            <input type="checkbox" name="advertising" id="offers" value="offers">
+            <label for="offers" class="inline">Offers</label>
+            <input type="checkbox" name="advertising" id="news" value="news">
+            <label for="news" class="inline">News</label>
+            <div class="error" id="errorAdvertising"></div>
+            <br>
+
+            <input type="submit" value="Send">
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #fec76f;
+}
+h2 {
+  margin-bottom: 20px;
+}
+#registerForm {
+  padding: 25px;
+  background-color: #f7ca82;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 1px 1px 10px black;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+label.inline {
+  display: inline-block;
+}
+
+input,
+select {
+  padding: 5px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  appearance: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #e2a33e;
+  box-shadow: 1px 1px 2px;
+  top: 15px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #805208;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 3px;
+  height: 11px;
+  border: 4px solid transparent;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg) scale(1);
+}
+
+input[type="checkbox"]:checked:before {
+  border-color: #fafafa;
+  animation: checkAnim 0.2 ease;
+}
+
+@keyframes checkAnim {
+  from {
+    transform: rotate(45deg) scale(0);
+  }
+}
+
+input[type="text"],
+input[type="mail"],
+input[type="number"],
+select {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+input[type="text"]:hover {
+  background-color: #e7e8eb;
+}
+input[type="mail"]:hover {
+  background-color: #e7e8eb;
+}
+input[type="number"]:hover {
+  background-color: #e7e8eb;
+}
+input[type="text"]:focus {
+  background-color: #e7e8eb;
+}
+input[type="mail"]:focus {
+  background-color: #e7e8eb;
+}
+input[type="number"]:focus {
+  background-color: #e7e8eb;
+}
+
+select:hover {
+  background-color: #e7e8eb;
+}
+select:focus {
+  background-color: #e7e8eb;
+}
+
+input[type="submit"] {
+  background-color: #b47e26;
+  border: none;
+  border-radius: 7px;
+  padding: 15px;
+  color: #fafafa;
+  font-weight: 900;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s ease;
+  box-shadow: 1px 1px 2px black;
+}
+
+input[type="submit"]:hover {
+  background-color: #805208;
+}
+
+.error {
+  font-size: 10px;
+  color: #e91717;
+  margin-top: 5px;
+}
